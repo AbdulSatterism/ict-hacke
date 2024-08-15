@@ -1,18 +1,10 @@
 import { Link } from "react-router-dom";
-
+import Marquee from "react-fast-marquee";
 const navbar = () => {
   const navItem = (
     <>
       <li className="text-xl text-white  hover:text-[#0fb89c]">
         <Link to="/">Home</Link>
-      </li>
-
-      <li className="text-xl text-white  hover:text-[#0fb89c]">
-        <Link to="/h">Home</Link>
-      </li>
-
-      <li className="text-xl text-white  hover:text-[#0fb89c]">
-        <Link to="/hh">Home</Link>
       </li>
     </>
   );
@@ -66,6 +58,16 @@ const navbar = () => {
           </div>
         </div>
       </div>
+      <Marquee
+        speed={100}
+        className="bg-[#060A20] text-white shadow-xl p-2 text-[16px]"
+      >
+        পুরো পাকিস্তানজুড়ে ইন্টারনেট ব্যবহারে মারাত্মক সমস্যার সম্মুখীন হচ্ছেন
+        ব্যবহারকারীরা। দেশটিতে ইন্টারনেট সচল থাকলেও এর গতি একদম কম থাকায় সোশ্যাল
+        মিডিয়া ব্যবহারে মারাত্মক সমস্যার মুখে পড়ছেন ব্যবহারকারীরা। ফলে বিঘ্নিত
+        হচ্ছে ব্যবসা-বাণিজ্য। তবে ইন্টারনেটের গতি কমের কোনো ব্যাখ্যা দিতে পারেনি
+        পাকিস্তান টেলিকমিউনিকেশন অথরিটি (পিটিএ)
+      </Marquee>
     </>
   );
 };

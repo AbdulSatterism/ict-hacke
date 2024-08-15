@@ -1,12 +1,5 @@
 import { FaCaretRight } from "react-icons/fa";
 
-// export type TCard = {
-//   id: string;
-//   title: string;
-//   img: string;
-//   topics: [string];
-// };
-
 const cartInfo = [
   {
     id: "1",
@@ -116,7 +109,10 @@ const MainCard = () => {
   return (
     <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-4">
       {cartInfo?.map((info) => (
-        <div className="p-2  bg-base-100 h-full shadow-xl border-b-4 border-r-4 rounded-br-lg border-b-[#184d81] border-r-[#184d81]">
+        <div
+          data-aos="zoom-in"
+          className="p-2  bg-base-100 h-full shadow-xl border-b-4 border-r-4 rounded-br-lg border-b-[#184d81] border-r-[#184d81]"
+        >
           <h1 className="text-2xl font-bold mb-4 text-[#2685e4]">
             {info.title}
           </h1>
@@ -127,7 +123,7 @@ const MainCard = () => {
               {info.topics.map((tp) => (
                 <p className="flex text-[16px] items-center gap-2">
                   {" "}
-                  <FaCaretRight />
+                  <FaCaretRight className="text-[#2685e4]" />
                   {tp}
                 </p>
               ))}
@@ -140,20 +136,3 @@ const MainCard = () => {
 };
 
 export default MainCard;
-/*
-
-     <div className="bg-gray-400 h-72 items-center ">
-          <h1 className="text-2xl">{info.title}</h1>
-          <div className="flex gap-4 place-items-center">
-            <div>
-              <img src="https://i.ibb.co/LQBHT0r/aboutus2.png" alt="" />
-            </div>
-            <div>
-              {info.topics.map((tp) => (
-                <p className=""> {tp}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-
-*/
