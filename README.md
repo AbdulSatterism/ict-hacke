@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+/* 
+#ICT Bangladesh but git name ICT hack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+------------I designed It----------
 
-Currently, two official plugins are available:
+------https://ictd.gov.bd/--------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---------technologies--------
+ react + vite, typescript, react router dom, tailwind, daisyui, antd, react-fast-marquee, react icon,
 
-## Expanding the ESLint configuration
+--------Instruction---------
+1. Have a navbar which have search option and 2 link
+2. have a breaking news headline under navbar
+3. have a banner slider
+4. have a category wise menu bar
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+------------main---------
+1. have two functionality in home page side card and main content card
+2. have a footer
 
-- Configure the top-level `parserOptions` property like this:
+-----
+Thanks for give us a opportunity for perticipate a contest.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+*/
