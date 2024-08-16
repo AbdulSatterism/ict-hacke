@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
+import logo from "../../assets/icon.png";
 const navbar = () => {
   const navItem = (
     <>
       <li className="text-xl text-white  hover:text-[#0fb89c]">
         <Link to="/">Home</Link>
+      </li>
+      <li className="text-xl text-white  hover:text-[#0fb89c]">
+        <Link to="/">About</Link>
       </li>
     </>
   );
@@ -41,8 +45,9 @@ const navbar = () => {
               {navItem}
             </ul>
           </div>
-          <div className="avatar text-white items-center">
-            <h1 className="text-xl font-semibold">Bangladesh ICT</h1>
+          <div className="avatar w-16 text-white items-center gap-2">
+            <img className="" src={logo} alt="" />
+            <h1 className="text-xl font-bold">ICT Bangladesh</h1>
           </div>
         </div>
         <div className="hidden navbar-center  lg:flex">
